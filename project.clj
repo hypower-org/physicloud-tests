@@ -19,4 +19,6 @@
                  [jkobuki "1.1.0"]]
   :java-source-paths ["src/physicloud/PhysiCloudClient"]
   :resource-paths ["resources/phidget21.jar"
-                 "resources/jssc-2.8.0.jar"])
+                 "resources/jssc-2.8.0.jar"]
+  :plugins [[lein-nodisassemble "0.1.3"]]
+)

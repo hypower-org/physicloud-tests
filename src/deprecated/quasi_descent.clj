@@ -90,7 +90,6 @@
 (defn global-constraint
   [agents]
   
-  
   (let [states (map (fn [x] ((:state x) (:id x))) agents)] 
       
       (concat [(- (reduce + states) (reduce + (map :tar agents)))]

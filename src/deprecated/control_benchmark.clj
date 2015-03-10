@@ -29,12 +29,13 @@
   [n] 
   `~(cons (ops (rand-int 4)) (repeatedly n #(rand-int+ n))))
 
+
 (defmacro gen-benchmark 
   [] 
   `(do
      (fn []
        (~-         
-         ~@(repeatedly (rand-int+ 50) #(gen-op (rand-int+ 10)))))))
+         ~@(repeatedly (+ 10 (rand-int+ 40)) #(gen-op (rand-int+ 10)))))))
 
 (defn- emitter 
   [] 
@@ -81,6 +82,7 @@
     
     (view (xy-plot counts results :x-label "bytecode count" :y-label "bytecode rate"))))
     
+(println "AVERAGE BYTECODE RATE (Bps): " (/ (reduce + two) (count two)))
 
 ;7579305.633078149
 ;1.7869334525406778E11
