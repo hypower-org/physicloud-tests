@@ -6,7 +6,7 @@
 
 (use '(incanter core charts))
 
-(-main []
+(defn -main []
 (defn gen-matrix
   "Generates a square matrix that is n-by-n"
   [n] 
@@ -83,7 +83,7 @@
     (spit "bps.edn" results)
     
     (view (xy-plot counts results :x-label "bytecode count" :y-label "bytecode rate"))))
-    
+(approximate-bytecode)
 (println "AVERAGE BYTECODE RATE (Bps): " (/ (reduce + two) (count two))))
 
 ;7579305.633078149
