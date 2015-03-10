@@ -15,10 +15,8 @@
                  [byte-streams "0.2.0-alpha4"]
                  [org.clojure/math.numeric-tower "0.0.4"]
                  [gloss "0.2.4"]
-                 [org.clojure/data.int-map "0.1.0"]
-                 [jkobuki "1.1.0"]]
-  :java-source-paths ["src/physicloud/PhysiCloudClient"]
-  :resource-paths ["resources/phidget21.jar"
-                 "resources/jssc-2.8.0.jar"]
+                 [org.clojure/data.int-map "0.1.0"]]
   :plugins [[lein-nodisassemble "0.1.3"]]
+  :main matlab-physicloud.matlab-client
+  :aot [matlab-physicloud.matlab-client]
 )

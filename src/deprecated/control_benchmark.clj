@@ -5,6 +5,7 @@
 
 (use '(incanter core charts))
 
+(-main []
 (defn gen-matrix
   "Generates a square matrix that is n-by-n"
   [n] 
@@ -82,7 +83,7 @@
     
     (view (xy-plot counts results :x-label "bytecode count" :y-label "bytecode rate"))))
     
-(println "AVERAGE BYTECODE RATE (Bps): " (/ (reduce + two) (count two)))
+(println "AVERAGE BYTECODE RATE (Bps): " (/ (reduce + two) (count two))))
 
 ;7579305.633078149
 ;1.7869334525406778E11
