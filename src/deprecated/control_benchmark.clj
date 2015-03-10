@@ -1,4 +1,4 @@
-(ns physicloud-tests.control-benchmark
+(ns depricated.control-benchmark
   (:require [criterium.core :as c]
            [clojure.core.matrix :as m]
            [no.disassemble :as d])

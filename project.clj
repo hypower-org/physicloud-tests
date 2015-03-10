@@ -17,5 +17,6 @@
                  [gloss "0.2.4"]
                  [org.clojure/data.int-map "0.1.0"]]
   :plugins [[lein-nodisassemble "0.1.3"]]
-  :main physicloud-tests.control-benchmark
+  :main deprecated.control-benchmark
+  :repl-options {:timeout 10000000000}
 )
