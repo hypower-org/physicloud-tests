@@ -1,4 +1,4 @@
-(ns depricated.control-benchmark
+(ns deprecated.control-benchmark
   (:require [criterium.core :as c]
            [clojure.core.matrix :as m]
            [no.disassemble :as d])
