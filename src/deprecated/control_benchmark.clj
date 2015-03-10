@@ -1,7 +1,8 @@
-(ns physicloud.control-benchmark
+(ns physicloud-tests.control-benchmark
   (:require [criterium.core :as c]
            [clojure.core.matrix :as m]
-           [no.disassemble :as d]))
+           [no.disassemble :as d])
+  (:gen-class))
 
 (use '(incanter core charts))
 

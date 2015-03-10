@@ -17,6 +17,5 @@
                  [gloss "0.2.4"]
                  [org.clojure/data.int-map "0.1.0"]]
   :plugins [[lein-nodisassemble "0.1.3"]]
-  :main matlab-physicloud.matlab-client
-  :aot [matlab-physicloud.matlab-client]
+  :main physicloud-tests.control-benchmark
 )
